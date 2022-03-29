@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://docs.harvesterhci.io/v1.0/upgrade/">
+        <link rel="canonical" href="https://docs.harvesterhci.io/v1.0/upgrade/automatic/">
       
-      <link rel="icon" href="../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.4">
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.8">
     
     
       
@@ -19,28 +19,29 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.bb3983ee.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.644de097.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
     
     
       
+        
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
         <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-      <link rel="stylesheet" href="../assets/swagger-ui/swagger-ui.css">
+      <link rel="stylesheet" href="../../assets/swagger-ui/swagger-ui.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -60,7 +61,7 @@
   
     
     
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -90,7 +91,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="https://harvesterhci.io" title="Harvester - Open Source Hyperconverged Infrastructure" class="md-header__button md-logo" aria-label="Harvester - Open Source Hyperconverged Infrastructure" data-md-component="logo">
       
-  <img src="../assets/logo_horizontal_white.png" alt="logo">
+  <img src="../../assets/logo_horizontal_white.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -172,10 +173,10 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/harvester/harvester/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/harvester/harvester" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     harvester/harvester
@@ -209,17 +210,17 @@
   <label class="md-nav__title" for="__drawer">
     <a href="https://harvesterhci.io" title="Harvester - Open Source Hyperconverged Infrastructure" class="md-nav__button md-logo" aria-label="Harvester - Open Source Hyperconverged Infrastructure" data-md-component="logo">
       
-  <img src="../assets/logo_horizontal_white.png" alt="logo">
+  <img src="../../assets/logo_horizontal_white.png" alt="logo">
 
     </a>
     Harvester - Open Source Hyperconverged Infrastructure
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/harvester/harvester/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/harvester/harvester" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     harvester/harvester
@@ -237,7 +238,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Harvester Overview
       </a>
     </li>
@@ -278,7 +279,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/iso-install/" class="md-nav__link">
+      <a href="../../install/iso-install/" class="md-nav__link">
         ISO Installation
       </a>
     </li>
@@ -292,7 +293,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/usb-install/" class="md-nav__link">
+      <a href="../../install/usb-install/" class="md-nav__link">
         USB Installation
       </a>
     </li>
@@ -306,7 +307,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/pxe-boot-install/" class="md-nav__link">
+      <a href="../../install/pxe-boot-install/" class="md-nav__link">
         PXE Boot Installation
       </a>
     </li>
@@ -320,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/harvester-configuration/" class="md-nav__link">
+      <a href="../../install/harvester-configuration/" class="md-nav__link">
         Harvester Configuration
       </a>
     </li>
@@ -334,7 +335,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../install/management-address/" class="md-nav__link">
+      <a href="../../install/management-address/" class="md-nav__link">
         Management Address
       </a>
     </li>
@@ -356,7 +357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../airgap/" class="md-nav__link">
+      <a href="../../airgap/" class="md-nav__link">
         Air Gapped Environment
       </a>
     </li>
@@ -371,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../../authentication/" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -411,7 +412,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../upload-image/" class="md-nav__link">
+      <a href="../../upload-image/" class="md-nav__link">
         Upload Images
       </a>
     </li>
@@ -426,7 +427,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../host/host/" class="md-nav__link">
+      <a href="../../host/host/" class="md-nav__link">
         Host Management
       </a>
     </li>
@@ -467,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vm/create-vm/" class="md-nav__link">
+      <a href="../../vm/create-vm/" class="md-nav__link">
         Create a VM
       </a>
     </li>
@@ -481,7 +482,21 @@
   
   
     <li class="md-nav__item">
-      <a href="../vm/access-to-the-vm/" class="md-nav__link">
+      <a href="../../vm/create-windows-vm/" class="md-nav__link">
+        Create a Windows VM
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vm/access-to-the-vm/" class="md-nav__link">
         Access to the Virtual Machine (VM)
       </a>
     </li>
@@ -495,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vm/backup-restore/" class="md-nav__link">
+      <a href="../../vm/backup-restore/" class="md-nav__link">
         VM Backup & Restore
       </a>
     </li>
@@ -509,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vm/live-migration/" class="md-nav__link">
+      <a href="../../vm/live-migration/" class="md-nav__link">
         Live Migration
       </a>
     </li>
@@ -523,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../vm/hotplug-volume/" class="md-nav__link">
+      <a href="../../vm/hotplug-volume/" class="md-nav__link">
         Hot-Plug Volumes
       </a>
     </li>
@@ -571,9 +586,112 @@
   
   
     <li class="md-nav__item">
-      <a href="../networking/harvester-network/" class="md-nav__link">
+      <a href="../../networking/harvester-network/" class="md-nav__link">
         Harvester Network
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_2" type="checkbox" id="__nav_9_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_9_2">
+          Best Practice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Best Practice" data-md-level="2">
+        <label class="md-nav__title" for="__nav_9_2">
+          <span class="md-nav__icon md-icon"></span>
+          Best Practice
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/best-practice/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/best-practice/multiple-nics-vlan-aware-switch/" class="md-nav__link">
+        Mulitple NICs with VLAN-aware Switch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/best-practice/multiple-nics-non-vlan-aware-switch/" class="md-nav__link">
+        Mulitple NICs with Non VLAN-aware Switch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/best-practice/single-nic-vlan-aware-switch/" class="md-nav__link">
+        Single NIC with VLAN-aware Switch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../networking/best-practice/single-nic-non-vlan-aware-switch/" class="md-nav__link">
+        Single NIC with Non VLAN-aware Switch
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -593,7 +711,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../monitoring/monitoring/" class="md-nav__link">
+      <a href="../../monitoring/monitoring/" class="md-nav__link">
         Monitoring
       </a>
     </li>
@@ -634,7 +752,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/rancher-integration/" class="md-nav__link">
+      <a href="../../rancher/rancher-integration/" class="md-nav__link">
         Rancher integration
       </a>
     </li>
@@ -648,7 +766,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/virtualization-management/" class="md-nav__link">
+      <a href="../../rancher/virtualization-management/" class="md-nav__link">
         Virtualization management
       </a>
     </li>
@@ -688,7 +806,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/node-driver/" class="md-nav__link">
+      <a href="../../rancher/node-driver/" class="md-nav__link">
         Harvester Node Driver
       </a>
     </li>
@@ -702,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/rke1-cluster/" class="md-nav__link">
+      <a href="../../rancher/rke1-cluster/" class="md-nav__link">
         Creating an RKE1 Kubernetes Cluster
       </a>
     </li>
@@ -716,8 +834,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/rke2-cluster/" class="md-nav__link">
+      <a href="../../rancher/rke2-cluster/" class="md-nav__link">
         Creating an RKE2 Kubernetes Cluster
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../rancher/k3s-cluster/" class="md-nav__link">
+        Creating an K3s Kubernetes Cluster
       </a>
     </li>
   
@@ -737,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/cloud-provider/" class="md-nav__link">
+      <a href="../../rancher/cloud-provider/" class="md-nav__link">
         Harvester Cloud Provider
       </a>
     </li>
@@ -751,7 +883,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../rancher/csi-driver/" class="md-nav__link">
+      <a href="../../rancher/csi-driver/" class="md-nav__link">
         Harvester CSI Driver
       </a>
     </li>
@@ -773,7 +905,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../terraform/terraform/" class="md-nav__link">
+      <a href="../../terraform/terraform/" class="md-nav__link">
         Harvester Terraform Provider
       </a>
     </li>
@@ -788,8 +920,23 @@
   
   
     <li class="md-nav__item">
-      <a href="../settings/settings/" class="md-nav__link">
+      <a href="../../settings/settings/" class="md-nav__link">
         Settings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dev/dev-mode/" class="md-nav__link">
+        Developer Mode Installation
       </a>
     </li>
   
@@ -806,18 +953,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_14" type="checkbox" id="__nav_14" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_14">
+        <label class="md-nav__link" for="__nav_15">
           Troubleshooting
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Troubleshooting" data-md-level="1">
-        <label class="md-nav__title" for="__nav_14">
+        <label class="md-nav__title" for="__nav_15">
           <span class="md-nav__icon md-icon"></span>
           Troubleshooting
         </label>
@@ -829,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/installation/" class="md-nav__link">
+      <a href="../../troubleshooting/installation/" class="md-nav__link">
         Installation
       </a>
     </li>
@@ -843,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/harvester/" class="md-nav__link">
+      <a href="../../troubleshooting/harvester/" class="md-nav__link">
         Harvester
       </a>
     </li>
@@ -857,7 +1004,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../troubleshooting/os/" class="md-nav__link">
+      <a href="../../troubleshooting/os/" class="md-nav__link">
         Operating System
       </a>
     </li>
@@ -882,18 +1029,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_15" type="checkbox" id="__nav_15" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_15">
+        <label class="md-nav__link" for="__nav_16">
           Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_15">
+        <label class="md-nav__title" for="__nav_16">
           <span class="md-nav__icon md-icon"></span>
           Reference
         </label>
@@ -905,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../reference/api/" class="md-nav__link">
+      <a href="../../reference/api/" class="md-nav__link">
         API Reference
       </a>
     </li>
@@ -927,7 +1074,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../faq/" class="md-nav__link">
+      <a href="../../faq/" class="md-nav__link">
         FAQ
       </a>
     </li>
@@ -964,17 +1111,16 @@
             <article class="md-content__inner md-typeset">
               
                 
-<a href="https://github.com/harvester/docs/edit/main/docs/upgrade.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/harvester/docs/edit/main/docs/upgrade/automatic.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
+
 
 
 <h1 id="upgrading-harvester">Upgrading Harvester<a class="headerlink" href="#upgrading-harvester" title="Permanent link">&para;</a></h1>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Upgrade is not supported from previous versions to v0.3.0 version.</p>
 <ul>
-<li>A manual upgrade process starting with v0.3.0 is being investigated. Harvester will inform the community once this process is in place.</li>
 <li>One-click upgrade will be supported starting with the v1.0.0 release.</li>
 </ul>
 </div>
@@ -991,7 +1137,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../authentication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication" rel="prev">
+        <a href="../../authentication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1007,7 +1153,7 @@
       
       
         
-        <a href="../upload-image/" class="md-footer__link md-footer__link--next" aria-label="Next: Upload Images" rel="next">
+        <a href="../../upload-image/" class="md-footer__link md-footer__link--next" aria-label="Next: Upload Images" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
@@ -1043,12 +1189,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.361d90f1.min.js", "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.5e67fbfe.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.289a2a4b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c44cc438.min.js"></script>
       
-        <script src="../assets/swagger-ui/swagger-ui-bundle.js"></script>
+        <script src="../../assets/swagger-ui/swagger-ui-bundle.js"></script>
       
     
   </body>
