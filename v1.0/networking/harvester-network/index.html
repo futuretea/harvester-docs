@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.harvesterhci.io/v1.0/networking/harvester-network/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -19,11 +19,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -428,6 +429,20 @@
     <li class="md-nav__item">
       <a href="../../upgrade/v1-0-0-to-v1-0-1/" class="md-nav__link">
         Upgrade from v1.0.0 to v1.0.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upgrade/troubleshooting/" class="md-nav__link">
+        Troubleshooting
       </a>
     </li>
   
@@ -1175,6 +1190,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1347,7 +1376,7 @@
 </ul>
 <h2 id="management-network">Management Network<a class="headerlink" href="#management-network" title="Permanent link">&para;</a></h2>
 <p>Harvester uses <a href="https://projectcalico.docs.tigera.io/getting-started/kubernetes/flannel/flannel">canal</a> as its default management network. It is a built-in network that can be used directly from the cluster. 
-By default, the management network IP of a VM can only be accessed within the cluster nodes, and the management network IP will not remain unchanged after the VM reboot.</p>
+By default, the management network IP of a VM can only be accessed within the cluster nodes, and the management network IP will change after the VM reboot. This is non-typical behaviour that needs to be taken note of since VM IPs are expected to remain unchanged after a reboot.</p>
 <p>However, users can leverage the Kubernetes <a href="https://kubevirt.io/user-guide/virtual_machines/service_objects/">service object</a> to create a stable IP for your VMs with the management network.</p>
 <h2 id="vlan-network">VLAN Network<a class="headerlink" href="#vlan-network" title="Permanent link">&para;</a></h2>
 <p>The <a href="https://github.com/harvester/harvester-network-controller">Harvester network-controller</a> leverages the <a href="https://github.com/k8snetworkplumbingwg/multus-cni">multus</a> and <a href="https://www.cni.dev/plugins/current/main/bridge/">bridge</a> CNI plugins to implement its customized L2 bridge VLAN network. It helps to connect your VMs to the host network interface and can be accessed from internal and external networks using the physical switch.</p>
@@ -1368,7 +1397,7 @@ By default, the management network IP of a VM can only be accessed within the cl
 <ul>
 <li>When selecting the network interface, the value in parentheses represents the distribution percentage of the network interface on all hosts. If a network interface with a value less than 100% is selected, the network interface needs to be manually specified on the host where the VLAN network configuration fails.</li>
 <li>Modifying the default VLAN network setting will not update the existing configured host network.</li>
-<li>Harvester VLAN network supports bond interfaces. Currently it can only be created automatically via <a href="/install/harvester-configuration/#installnetworks">PXE Boot Configuration</a>. You may also login to the node and create it manually.</li>
+<li>Harvester VLAN network supports bond interfaces. Currently it can only be created automatically via <a href="../../install/harvester-configuration/#installnetworks">PXE Boot Configuration</a>. You may also login to the node and create it manually.</li>
 </ul>
 </div>
 <p>You can also customize each node's VLAN network via the <strong>Hosts &gt; Network</strong> tab.</p>
@@ -1377,7 +1406,7 @@ By default, the management network IP of a VM can only be accessed within the cl
 <p>A new VLAN network can be created via the <strong>Advanced &gt; Networks</strong> page and clicking the <strong>Create</strong> button.</p>
 <ol>
 <li>
-<p>Specify the name and VLAN ID that you want to create for the VLAN network <small>(You can specify the same vlan ID on different namespaces of <a href="/rancher/virtualization-management/#multi-tenancy">Rancher multi-tenancy</a> support)</small>.
+<p>Specify the name and VLAN ID that you want to create for the VLAN network <small>(You can specify the same vlan ID on different namespaces of <a href="../../rancher/virtualization-management/#multi-tenancy">Rancher multi-tenancy</a> support)</small>.
    <img alt="create-vlan-network.png" src="../assets/create-network.png" /></p>
 </li>
 <li>
@@ -1432,6 +1461,7 @@ Harvester is fully compatible with the <code>cloud-init network configs</code>. 
 
               
             </article>
+            
           </div>
         </div>
         
@@ -1439,7 +1469,8 @@ Harvester is fully compatible with the <code>cloud-init network configs</code>. 
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../../vm/resource-overcommit/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Resource Overcommit" rel="prev">
@@ -1494,10 +1525,10 @@ Harvester is fully compatible with the <code>cloud-init network configs</code>. 
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../assets/swagger-ui/swagger-ui-bundle.js"></script>
       

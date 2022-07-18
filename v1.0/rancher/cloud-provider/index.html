@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://docs.harvesterhci.io/v1.0/rancher/cloud-provider/">
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.14">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -19,11 +19,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.3de6f41f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -428,6 +429,20 @@
     <li class="md-nav__item">
       <a href="../../upgrade/v1-0-0-to-v1-0-1/" class="md-nav__link">
         Upgrade from v1.0.0 to v1.0.1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../upgrade/troubleshooting/" class="md-nav__link">
+        Troubleshooting
       </a>
     </li>
   
@@ -1202,6 +1217,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/monitoring/" class="md-nav__link">
+        Monitoring
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1542,48 +1571,49 @@ users:
 <table>
 <thead>
 <tr>
-<th align="left">Annotation Key</th>
-<th align="left">Value Type</th>
-<th align="left">Required</th>
-<th align="left">Description</th>
+<th style="text-align: left;">Annotation Key</th>
+<th style="text-align: left;">Value Type</th>
+<th style="text-align: left;">Required</th>
+<th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>cloudprovider.harvesterhci.io/healthcheck-port</code></td>
-<td align="left">string</td>
-<td align="left">true</td>
-<td align="left">Specifies the port. The prober will access the address composed of the backend server IP and the port.</td>
+<td style="text-align: left;"><code>cloudprovider.harvesterhci.io/healthcheck-port</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">true</td>
+<td style="text-align: left;">Specifies the port. The prober will access the address composed of the backend server IP and the port.</td>
 </tr>
 <tr>
-<td align="left"><code>cloudprovider.harvesterhci.io/healthcheck-success-threshold</code></td>
-<td align="left">string</td>
-<td align="left">false</td>
-<td align="left">Specifies the health check success threshold. The default value is 1. The backend server will start forwarding traffic if the number of times the prober continuously detects an address successfully reaches the threshold.</td>
+<td style="text-align: left;"><code>cloudprovider.harvesterhci.io/healthcheck-success-threshold</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">Specifies the health check success threshold. The default value is 1. The backend server will start forwarding traffic if the number of times the prober continuously detects an address successfully reaches the threshold.</td>
 </tr>
 <tr>
-<td align="left"><code>cloudprovider.harvesterhci.io/healthcheck-failure-threshold</code></td>
-<td align="left">string</td>
-<td align="left">false</td>
-<td align="left">Specifies the health check failure threshold. The default value is 3. The backend server will stop forwarding traffic if the number of health check failures reaches the threshold.</td>
+<td style="text-align: left;"><code>cloudprovider.harvesterhci.io/healthcheck-failure-threshold</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">Specifies the health check failure threshold. The default value is 3. The backend server will stop forwarding traffic if the number of health check failures reaches the threshold.</td>
 </tr>
 <tr>
-<td align="left"><code>cloudprovider.harvesterhci.io/healthcheck-periodseconds</code></td>
-<td align="left">string</td>
-<td align="left">false</td>
-<td align="left">Specifies the health check period. The default value is 5 seconds.</td>
+<td style="text-align: left;"><code>cloudprovider.harvesterhci.io/healthcheck-periodseconds</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">Specifies the health check period. The default value is 5 seconds.</td>
 </tr>
 <tr>
-<td align="left"><code>cloudprovider.harvesterhci.io/healthcheck-timeoutseconds</code></td>
-<td align="left">string</td>
-<td align="left">false</td>
-<td align="left">Specifies the timeout of every health check. The default value is 3 seconds.</td>
+<td style="text-align: left;"><code>cloudprovider.harvesterhci.io/healthcheck-timeoutseconds</code></td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">false</td>
+<td style="text-align: left;">Specifies the timeout of every health check. The default value is 3 seconds.</td>
 </tr>
 </tbody>
 </table>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -1591,7 +1621,8 @@ users:
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../k3s-cluster/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Creating an K3s Kubernetes Cluster" rel="prev">
@@ -1646,10 +1677,10 @@ users:
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c2e1ee47.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
         <script src="../../assets/swagger-ui/swagger-ui-bundle.js"></script>
       
